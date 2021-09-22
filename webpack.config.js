@@ -1,4 +1,5 @@
 const path = require('path')
+// eslint-disable-next-line object-curly-spacing
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
@@ -70,13 +71,7 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-              reloadAll: true
-            }
-          },
+          MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
         ],

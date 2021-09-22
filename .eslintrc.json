@@ -15,8 +15,9 @@
             "error",
             "windows"
         ],
-        "comma-dangle":"off",
-        "arrow-parens":"off",
-        "curly-spacing":"off"
+        "comma-dangle": "off",
+        "arrow-parens": "off",
+        "curly-spacing": "off",
+        "editor.tabSize": 4
     }
 }

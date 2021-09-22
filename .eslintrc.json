@@ -17,6 +17,6 @@
         ],
         "comma-dangle":"off",
         "arrow-parens":"off",
-        "curly-spacing": "never" 
+        "curly-spacing":"off"
     }
 }

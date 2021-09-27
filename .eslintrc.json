@@ -20,6 +20,8 @@
         "arrow-parens": "off",
         "curly-spacing": "off",
         "indent": ["error", 4],
+        "max-len": ["error", { "ignoreTemplateLiterals": true }],
+        "operator-linebreak": "off",
         "require-jsdoc": ["error", {
             "require": {
                 "FunctionDeclaration": false,

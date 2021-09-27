@@ -5,6 +5,7 @@
         "node": true
     },
     "extends": ["eslint:recommended", "google"],
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaVersion": 12,
         "sourceType": "module"
@@ -15,8 +16,20 @@
             "error",
             "windows"
         ],
-        "comma-dangle":"off",
-        "arrow-parens":"off",
-        "curly-spacing":"off"
+        "comma-dangle": "off",
+        "arrow-parens": "off",
+        "curly-spacing": "off",
+        "indent": ["error", 4],
+        "max-len": ["error", { "ignoreTemplateLiterals": true }],
+        "operator-linebreak": "off",
+        "require-jsdoc": ["error", {
+            "require": {
+                "FunctionDeclaration": false,
+                "MethodDefinition": false,
+                "ClassDeclaration": false,
+                "ArrowFunctionExpression": false,
+                "FunctionExpression": false
+            }
+        }]
     }
 }
